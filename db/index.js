@@ -7,8 +7,10 @@ const sequelize = new Sequelize({
 
 const db = {
   sequelize,
-  Sequelize
+  Sequelize,
+  Models: {}
 };
 
+db.Models.Book = require('./models/book.js')(sequelize);
 
 module.exports = db;
