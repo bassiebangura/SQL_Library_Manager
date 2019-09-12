@@ -1,11 +1,17 @@
 {
   "name": "sql_library_manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "A web application for accessing an Sqlite Database",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Bassie Bangura",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
+    "sequelize": "^5.18.4",
+    "sqlite3": "^4.1.0"
+  }
 }
