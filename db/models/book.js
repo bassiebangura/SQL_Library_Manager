@@ -5,8 +5,14 @@ module.exports = sequelize => {
   class Book extends Sequelize.Model {}
   Book.init(
     {
-      title: Sequelize.STRING,
-      author: Sequelize.STRING,
+      title: {
+        type: String,
+        allowNull: false
+      },
+      author: {
+        type: String,
+        allowNull: false
+      },
       genre: Sequelize.STRING,
       year: Sequelize.INTEGER
     },
